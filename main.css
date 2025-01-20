@@ -143,11 +143,24 @@ section.experiment:hover {
 
 
 /* BUTTON EFFECT
+------------------------------
+In this exercise, we're using CSS to style an <a> link element to look like a button. This technique is useful for navigation links that take you to other pages or external sites.
+
+Be aware that there is also an HTML element named <button>, which is typically used for actions like submitting forms or triggering JavaScript functionality. We haven't introduced <button> yet since it’s primarily used in the context of forms or interactive features.
+
+Styling <a> elements as buttons is a worthwhile technique because:
+ - It ensures semantic HTML when the action is navigation.
+ - It provides a consistent and accessible user experience across your site.
+ - It's a flexible approach that allows for visual consistency without changing the underlying behavior.
 ------------------------------*/
 
 
+ 
 
 
+
+/* HOVER CARD
+------------------------------*/
 
 
 
@@ -193,7 +206,7 @@ section.container:last-of-type {
 ------------------------------*/
 body {
    font-family: sans-serif;
-   height: 100%;
+   /* height: 100%; */
    background: linear-gradient(#acb8c7, #7c8088);
    padding: 1rem;
 }
