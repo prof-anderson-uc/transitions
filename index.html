@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gradients, Transitions, and Transforms</title>
+    <link href="reset.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+   
+<div class="wrapper">
+
+
+<article class="exercise">
+
+<header>
+    <h1>Gradient, Transition, and Transform</h1>
+</header>
+
+<section class="container">
+    <section class="column linear1">
+        Linear Gradient
+    </section>
+        
+    <section class="column linear2">
+        Linear Gradient
+    </section>
+        
+    <section class="column linear3">
+        Linear Gradient
+    </section>
+
+    <section class="column radial1">
+        Radial gradient
+    </section>
+        
+    <section class="column radial2">
+        Radial gradient
+    </section>
+
+    <section class="column repeating">
+        Repeating
+    </section>
+    
+</section>
+
+<section class="container">
+    <section class="column color">
+        Transition<br>Color
+    </section>
+
+    <section class="column multiple">
+        Multiple<br>Transitions
+    </section>
+
+    <section class="column scale">
+        Transform<br>Scale
+    </section>
+</section>
+   
+<section class="container">
+    <section class="column rotatex">
+        Transform<br>Rotate X
+    </section>
+
+    <section class="column rotatey">
+        Transform<br>Rotate Y
+    </section>
+    
+    <section class="column rotatez">
+        Transform<br>Rotate Z
+    </section>
+    
+    <section class="column translatex">
+        Transform<br>Translate X
+    </section>
+    
+    <section class="column translatey">
+        Transform<br>Translate Y
+    </section>
+
+    <section class="column experiment">
+        Experiment
+    </section>
+</section>
+
+<section class="container">
+   <section class="column">
+   
+        <a href="http://www.uc.edu">
+            UC Bearcat Button!
+        </a>
+    
+    </section>
+</section>
+    
+</article>
+
+
+<aside class="info">
+  
+    <section class="info-column">
+      <h3>All Transition Properties:</h3>
+      <code>
+          <ul>
+              <li>transition-property:</li>
+              <li>transition-duration:</li>
+              <li>transition-timing-function:</li>
+              <li>transition-delay:</li>
+          </ul>
+      </code>
+    </section>
+    
+  <section class="info-column">
+      <h3>Shorthand Format:</h3>
+      <code><strong>transition:</strong><em> property&nbsp;&nbsp;duration&nbsp;&nbsp;timing-function&nbsp;&nbsp;delay;</em></code>
+  </section>
+   
+   <section class="info-column">
+    <h3>Timing Functions</h3>
+    <dl>
+        <dt>linear</dt>
+        <dd>Consistent speed from beginning to end.</dd>
+        
+        <dt>ease</dt>
+        <dd>Starts slowly, accelerates, then slows back down at the end.</dd>
+        
+        <dt>ease-in</dt>
+        <dd>Starts slowly, then speeds up.</dd>
+        
+        <dt>ease-out</dt>
+        <dd>Starts fast, then slows down.</dd>
+        
+        <dt>ease-in-out</dt>
+        <dd>Starts slowly, speeds up, then slows down again at the end. Similar to <code>ease</code>, but with less acceleration in the middle.</dd>
+    </dl>
+   </section>  
+
+    <section class="info-column">
+        <h3>Transform Options</h3>
+        <dl>
+            <dt>scale(x)</dt>
+            <dd>Increases or decreases the size of the element.<br> Syntax: .5=half size, 1=current size, 2=twice current size  </dd>
+            
+            <dt>rotate(x)</dt>
+            <dd>Rotates an element clockwise (postive number) or counter-clockwise (negative number) in angled degrees.</dd>
+            
+            <dt>translate(x, y)</dt>
+            <dd>Moves an element from its current position according to the parameters given for the X-axis and the Y-axis.</dd>
+            
+            <dt>skew(x, y)</dt>
+            <dd>Skews an element along the X and/or Y-axis by angled degrees.</dd>
+                        
+            
+            <dt>rotate3d(x,y,z)</dt>
+            <dd>Rorates an element along the x (horizontal) y (vertical) and z (depth) axes by degrees.</dd>
+            
+        </dl>
+    </section>
+        
+    
+</aside>
+
+</div><!-- wrapper -->
+</body>
+</html>
