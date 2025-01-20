@@ -1,91 +1,149 @@
-/* CHANGE THE BOX MODEL TO BORDER-BOX
--------------------------------------------*/
-
-
-
 
 /* GRADIENTS
--------------------------------------------*/
+------------------------------
+CSS gradients allow you to create smooth transitions between colors.
+ - Linear gradients: transition along a straight line.
+ - Radial gradients: colors radiate outward from a center point.
 
-section.linear1 {}
+Example: 
+  background: linear-gradient(to right, red, blue);
+  background: radial-gradient(circle, yellow, green);
+------------------------------*/
 
-section.linear2 {}
+section.linear1 {
 
-section.linear3 {}
-
-section.radial1 {}
-
-section.radial2 {}
+}
 
 
-section.repeating {}
+section.linear2 {
+
+}
+
+
+section.linear3 {
+
+}
+
+
+section.radial1 {
+
+}
+
+
+section.radial2 {
+
+}
+
+
+section.repeating {
+
+}
 
 
 
 
 /* TRANSITIONS
--------------------------------------------*/
+------------------------------
+CSS transitions allow you to create smooth changes to properties over a set duration. Use with pseudo-classes (e.g., :hover) to trigger effects.
+
+Example:
+  transition: all 0.5s ease;
+
+This example changes any property over 0.5 seconds using an "ease" timing function.
+------------------------------*/
 
 section.color {
    background-color: #a0b3d4;
 }
 
-section.color:hover {}
+
+section.color:hover {
+
+}
 
 
 section.multiple {
    background-color: #a0b3d4;
 }
 
-section.multiple:hover {}
+
+section.multiple:hover {
+
+}
 
 
 section.scale {
    background-color: #a0b3d4;
 }
 
-section.scale:hover {}
+
+section.scale:hover {
+
+}
 
 
 section.rotatex {
    background-color: #7989a7;
 }
 
-section.rotatex:hover {}
+
+section.rotatex:hover {
+
+}
+
 
 section.rotatey {
    background-color: #7989a7;
 }
 
-section.rotatey:hover {}
+
+section.rotatey:hover {
+
+}
+
 
 section.rotatez {
    background-color: #7989a7;
 }
 
-section.rotatez:hover {}
+
+section.rotatez:hover {
+
+}
 
 
 section.translatex {
    background-color: #7989a7;
 }
 
-section.translatex:hover {}
+
+section.translatex:hover {
+
+}
+
 
 section.translatey {
    background-color: #7989a7;
 }
 
-section.translatey:hover {}
+
+section.translatey:hover {
+
+}
 
 
-section.experiment {}
+section.experiment {
 
-section.experiment:hover {}
+}
 
 
-/* BUTTON
-----------------------------------------------------*/
+section.experiment:hover {
+
+}
+
+
+/* BUTTON EFFECT
+------------------------------*/
 
 
 
@@ -98,7 +156,7 @@ section.experiment:hover {}
 
 
 /* SECTION LAYOUTS
--------------------------------------------*/
+------------------------------*/
 section.container {
    color: white;
    background-color: #d9d9d9;
@@ -132,7 +190,7 @@ section.container:last-of-type {
 
 
 /* GENERAL PAGE STYLES
-----------------------------------------------------*/
+------------------------------*/
 body {
    font-family: sans-serif;
    height: 100%;
