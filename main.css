@@ -53,7 +53,7 @@ This example changes any property over 0.5 seconds using an "ease" timing functi
 ------------------------------*/
 
 section.color {
-   background-color: #a0b3d4;
+   background: #a8dadc;
 }
 
 
@@ -63,7 +63,7 @@ section.color:hover {
 
 
 section.multiple {
-   background-color: #a0b3d4;
+   background: #a8dadc;
 }
 
 
@@ -73,7 +73,7 @@ section.multiple:hover {
 
 
 section.scale {
-   background-color: #a0b3d4;
+   background: #a8dadc;
 }
 
 
@@ -82,8 +82,22 @@ section.scale:hover {
 }
 
 
+
+
+/* TRANSFORMS
+------------------------------
+CSS transforms allow you to visually manipulate elements in 2D or 3D space. 
+- 2D transforms include scaling, rotating, and translating elements.
+- 3D transforms add depth and can rotate elements along the X, Y, or Z axes.
+
+Example:
+  transform: scale(1.2) rotateX(45deg);
+
+These effects are often combined with transitions for smooth animations.
+------------------------------ */
+
 section.rotatex {
-   background-color: #7989a7;
+   background: #6c8fa6;
 }
 
 
@@ -93,7 +107,7 @@ section.rotatex:hover {
 
 
 section.rotatey {
-   background-color: #7989a7;
+   background: #6c8fa6;
 }
 
 
@@ -103,7 +117,7 @@ section.rotatey:hover {
 
 
 section.rotatez {
-   background-color: #7989a7;
+   background: #6c8fa6;
 }
 
 
@@ -113,7 +127,7 @@ section.rotatez:hover {
 
 
 section.translatex {
-   background-color: #7989a7;
+   background: #6c8fa6;
 }
 
 
@@ -123,7 +137,7 @@ section.translatex:hover {
 
 
 section.translatey {
-   background-color: #7989a7;
+   background: #6c8fa6;
 }
 
 
@@ -140,6 +154,8 @@ section.experiment {
 section.experiment:hover {
 
 }
+
+
 
 
 /* BUTTON EFFECT
@@ -207,7 +223,7 @@ section.container:last-of-type {
 body {
    font-family: sans-serif;
    /* height: 100%; */
-   background: linear-gradient(#acb8c7, #7c8088);
+   background: linear-gradient(#acb8c7, #414245);
    padding: 1rem;
 }
 
