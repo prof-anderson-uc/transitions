@@ -1,4 +1,3 @@
-
 /* GRADIENTS
 ------------------------------
 CSS gradients allow you to create smooth transitions between colors.
@@ -36,7 +35,7 @@ section.radial2 {
 
 
 section.repeating {
-
+   
 }
 
 
@@ -58,7 +57,7 @@ section.color {
 
 
 section.color:hover {
-
+   background: #375383;
 }
 
 
@@ -68,17 +67,7 @@ section.multiple {
 
 
 section.multiple:hover {
-
-}
-
-
-section.scale {
-   background: #a8dadc;
-}
-
-
-section.scale:hover {
-
+   background: #375383;
 }
 
 
@@ -95,6 +84,11 @@ Example:
 
 These effects are often combined with transitions for smooth animations.
 ------------------------------ */
+
+section.rotate {
+   background: #6c8fa6;
+}
+
 
 section.rotatex {
    background: #6c8fa6;
@@ -116,12 +110,12 @@ section.rotatey:hover {
 }
 
 
-section.rotatez {
+section.scale {
    background: #6c8fa6;
 }
 
 
-section.rotatez:hover {
+section.scale:hover {
 
 }
 
@@ -145,9 +139,16 @@ section.translatey:hover {
 
 }
 
+section.skew {
+   background: #6c8fa6;
+}
+
+section.skew:hover {
+
+}
 
 section.experiment {
-
+   background: #6c8fa6;
 }
 
 
@@ -155,6 +156,32 @@ section.experiment:hover {
 
 }
 
+
+
+
+/* HOVER CARD
+------------------------------*/
+.card {
+   max-width: 300px;
+   padding: 1.5rem;
+   margin: 1rem auto;
+   border-radius: 10px;
+   background: linear-gradient(to bottom, #f1faee, #a8dadc);
+   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+   text-align: center;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h3 {
+   font-size: 150%;
+   border-bottom: 2px solid silver;
+   margin-bottom: .5rem;
+   padding-bottom: .5rem;
+}
+
+.card:hover {
+
+}
 
 
 
@@ -169,14 +196,135 @@ Styling <a> elements as buttons is a worthwhile technique because:
  - It provides a consistent and accessible user experience across your site.
  - It's a flexible approach that allows for visual consistency without changing the underlying behavior.
 ------------------------------*/
+a.button {
+   border: 2px solid silver;
+   padding: .75em 1.5em;
+   border-radius: 3em;
+   background: linear-gradient(#EA393B, #4D0808);
+   color: #e1e1e1;
+   font-weight: bold;
+   text-decoration: none;
+   box-shadow: inset 2px 2px 10px black;
+   transition: all .5s ease;
+}
+
+a.button:hover {
+   transform: scale(1.05);
+   box-shadow: none;
+   color: white;
+}
 
 
- 
 
 
 
-/* HOVER CARD
+
+
+
+/* ANIMATED CARD FLIP
 ------------------------------*/
+/* This CSS creates an animated 3D card flip effect.
+   The card consists of a "front" and a "back" side, which flip when the user hovers over the card.
+   Key concepts demonstrated:
+   - 3D transformations using the `transform` property.
+   - Smooth animations with `transition`.
+   - Visibility control using `backface-visibility`.
+   - Layout adjustments for handling more content on each side.
+   Follow the comments to understand how each part contributes to the final effect. */
+
+
+
+/* Container to center the card and add 3D perspective */
+.card-container {
+   width: 300px;
+   /* Increased width for more content */
+   height: 400px;
+   /* Increased height for more content */
+   perspective: 1000px;
+   /* Adds depth to create a 3D effect */
+   margin: 50px auto;
+   /* Centers the container horizontally */
+}
+
+/* Wrapper for the card that will flip */
+.flip-card {
+   width: 100%;
+   /* Make the card fill the container's width */
+   height: 100%;
+   /* Make the card fill the container's height */
+   position: relative;
+   /* Needed for absolute positioning of front/back sides */
+   transform-style: preserve-3d;
+   /* Ensures the front and back exist in 3D space */
+   transform: rotateY(0deg);
+   /* Start with the front side facing the viewer */
+   transition: transform 0.6s ease;
+   /* Adds a smooth animation when flipping */
+}
+
+/* The headings at the top of the cards */
+.flip-card h2 {
+   color: white;
+   /* Color of the <h2> elements */
+}
+
+/* Flip the card on hover */
+.card-container:hover .flip-card {
+   transform: rotateY(180deg);
+   /* Rotates the card 180 degrees on the Y-axis */
+}
+
+/* Styles for both sides of the card */
+.flip-card div {
+   width: 100%;
+   /* Make each side fill the card's width */
+   height: 100%;
+   /* Make each side fill the card's height */
+   position: absolute;
+   /* Position the front and back sides relative to the card */
+   backface-visibility: hidden;
+   /* Hides the side that is facing away from the viewer */
+   display: flex;
+   /* Centers content on each side */
+   flex-direction: column;
+   /* Stack content vertically */
+   justify-content: center;
+   /* Center content vertically */
+   align-items: center;
+   /* Center content horizontally */
+   padding: 20px;
+   /* Add padding for content spacing */
+   font-size: 16px;
+   /* Adjust text size */
+   border: 1px solid #ddd;
+   /* Adds a border to each side */
+   border-radius: 10px;
+   /* Rounds the corners of the card */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   /* Adds a subtle shadow for depth */
+   box-sizing: border-box;
+   /* Ensures padding doesn't affect size */
+   text-align: center;
+   /* Center-align text */
+}
+
+/* Style for the front side of the card */
+.front {
+   background: #4caf50;
+   /* Green background for the front */
+   color: white;
+   /* White text color for contrast */
+}
+
+/* Style for the back side of the card */
+.back {
+   background: #f44336;
+   /* Red background for the back */
+   color: white;
+   /* White text color for contrast */
+   transform: rotateY(180deg);
+   /* Rotate the back side 180 degrees so it's hidden initially */
+}
 
 
 
@@ -193,9 +341,9 @@ section.container {
    border-radius: 1rem;
    padding: 1rem;
    text-shadow: 1px 1px 3px black;
-   display: grid;
+   /* display: grid;
    grid-template-columns: 1fr 1fr 1fr;
-   gap: 1rem;
+   gap: 1rem; */
 }
 
 section.container {
@@ -213,8 +361,28 @@ section.container section.column {
    line-height: 1.4;
 }
 
-section.container:last-of-type {
+section.four-columns {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 1rem;
+}
+
+section.three-columns {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 1rem;
+}
+
+section.two-columns {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 1rem;
+}
+
+section.one-column {
+   display: grid;
    grid-template-columns: 1fr;
+   gap: 1rem;
 }
 
 
